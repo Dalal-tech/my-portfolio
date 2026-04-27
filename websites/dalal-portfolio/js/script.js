@@ -36,7 +36,19 @@ const contactForm = document.querySelector(".contact-form");
 if (contactForm) {
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    alert("شكرًا لتواصلك! تم إرسال رسالتك بنجاح.");
+
+    const name = contactForm.querySelector("#name")?.value.trim() || "";
+    const email = contactForm.querySelector("#email")?.value.trim() || "";
+    const message = contactForm.querySelector("#message")?.value.trim() || "";
+
+    const whatsappText =
+      `السلام عليكم، معك ${name || "عميل جديد"}.\n` +
+      `${email ? `إيميلي: ${email}\n` : ""}` +
+      `تفاصيل الطلب:\n${message || "أرغب في الاستفسار عن الخدمات المتاحة."}`;
+
+    const whatsappUrl = `https://wa.me/966570604402?text=${encodeURIComponent(whatsappText)}`;
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+
     contactForm.reset();
   });
 }

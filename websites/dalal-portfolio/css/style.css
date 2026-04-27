@@ -177,10 +177,14 @@ h2 {
   padding: 20px;
 }
 
-.avatar {
+.avatar,
+.avatar-img {
   width: 160px;
   height: 160px;
   border-radius: 50%;
+}
+
+.avatar {
   display: grid;
   place-items: center;
   background: linear-gradient(130deg, #254c38, #1a3b2b);
@@ -188,6 +192,12 @@ h2 {
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 10px;
+}
+
+.avatar-img {
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid #e6ece7;
 }
 
 .section-head {
@@ -304,6 +314,24 @@ h2 {
 
 .footer small {
   color: #d7d7cf;
+}
+
+.whatsapp-float {
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  z-index: 999;
+  background: #25d366;
+  color: #fff;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-weight: 800;
+  box-shadow: 0 10px 24px rgba(9, 96, 43, 0.35);
+}
+
+.whatsapp-float:hover {
+  filter: brightness(1.05);
+  transform: translateY(-2px);
 }
 
 .reveal {
