@@ -26,7 +26,7 @@ function revealHashTarget() {
 window.addEventListener("hashchange", revealHashTarget);
 window.addEventListener("load", revealHashTarget);
 
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
+document.querySelectorAll("header a[href^='#']").forEach((link) => {
   link.addEventListener("click", () => {
     const href = link.getAttribute("href");
     if (!href || href === "#") return;
@@ -54,6 +54,26 @@ filterButtons.forEach((button) => {
       const shouldShow = filter === "all" || filter === category;
       card.style.display = shouldShow ? "" : "none";
     });
+  });
+});
+
+document.querySelectorAll("a.project-demo-link").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    if (
+      event.button !== 0 ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      event.altKey
+    ) {
+      return;
+    }
+    event.preventDefault();
+    const url = link.href;
+    const opened = window.open(url, "_blank", "noopener,noreferrer");
+    if (opened === null) {
+      window.location.assign(url);
+    }
   });
 });
 

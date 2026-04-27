@@ -279,6 +279,16 @@ h2 {
   color: #2b5a45;
 }
 
+.project-card {
+  position: relative;
+  isolation: isolate;
+}
+
+.project-card .project-demo-link {
+  position: relative;
+  z-index: 2;
+}
+
 .project-card h3,
 .service-card h3 {
   margin-bottom: 8px;
