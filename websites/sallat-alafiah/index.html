@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="سلة العافية - متجر منتجات صحية وعضوية">
+  <title>سلة العافية | متجر صحي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="nav">
+      <a href="#home" class="brand">سلة العافية</a>
+      <div class="nav-links">
+        <a href="#products">المنتجات</a>
+        <a href="#cart">السلة</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>سلة العافية</h1>
+      <p>منتجات صحية وعضوية بعناية... لصحة أفضل كل يوم.</p>
+      <a href="#products" class="btn">تصفح المنتجات</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="products">
+      <div class="container">
+        <h2>منتجاتنا</h2>
+        <div class="products-grid">
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=900&q=80" alt="عسل سدر جبلي">
+            <h3>عسل سدر جبلي</h3>
+            <p class="price">89 ريال</p>
+            <button class="add-btn" data-name="عسل سدر جبلي" data-price="89">أضف للسلة</button>
+          </article>
+
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=900&q=80" alt="زيت زيتون بكر">
+            <h3>زيت زيتون بكر</h3>
+            <p class="price">55 ريال</p>
+            <button class="add-btn" data-name="زيت زيتون بكر" data-price="55">أضف للسلة</button>
+          </article>
+
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&w=900&q=80" alt="مكسرات عضوية">
+            <h3>مكسرات عضوية</h3>
+            <p class="price">45 ريال</p>
+            <button class="add-btn" data-name="مكسرات عضوية" data-price="45">أضف للسلة</button>
+          </article>
+
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?auto=format&fit=crop&w=900&q=80" alt="شاي أعشاب طبيعي">
+            <h3>شاي أعشاب طبيعي</h3>
+            <p class="price">35 ريال</p>
+            <button class="add-btn" data-name="شاي أعشاب طبيعي" data-price="35">أضف للسلة</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cart-section" id="cart">
+      <div class="container">
+        <h2>سلة التسوق</h2>
+        <div class="cart-card">
+          <p>عدد المنتجات: <strong id="cartCount">0</strong></p>
+          <ul id="cartItems" class="cart-items">
+            <li class="empty">السلة فارغة حالياً.</li>
+          </ul>
+          <p class="total">المجموع: <strong id="cartTotal">0 ريال</strong></p>
+          <button id="checkoutBtn" class="btn checkout-btn" type="button">إنهاء الشراء</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 سلة العافية - متجر بسيط لمنتجات صحية وعضوية</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
