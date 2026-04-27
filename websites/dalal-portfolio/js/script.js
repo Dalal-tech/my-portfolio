@@ -14,6 +14,31 @@ const revealObserver = new IntersectionObserver(
 
 revealElements.forEach((element) => revealObserver.observe(element));
 
+function revealHashTarget() {
+  const id = window.location.hash.slice(1);
+  if (!id) return;
+  const target = document.getElementById(id);
+  if (target && target.classList.contains("reveal")) {
+    target.classList.add("visible");
+  }
+}
+
+window.addEventListener("hashchange", revealHashTarget);
+window.addEventListener("load", revealHashTarget);
+
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    const href = link.getAttribute("href");
+    if (!href || href === "#") return;
+    requestAnimationFrame(() => {
+      const target = document.querySelector(href);
+      if (target && target.classList.contains("reveal")) {
+        target.classList.add("visible");
+      }
+    });
+  });
+});
+
 const filterButtons = document.querySelectorAll(".filter-btn");
 const projectCards = document.querySelectorAll(".project-card");
 
@@ -27,7 +52,7 @@ filterButtons.forEach((button) => {
     projectCards.forEach((card) => {
       const category = card.dataset.category;
       const shouldShow = filter === "all" || filter === category;
-      card.style.display = shouldShow ? "block" : "none";
+      card.style.display = shouldShow ? "" : "none";
     });
   });
 });

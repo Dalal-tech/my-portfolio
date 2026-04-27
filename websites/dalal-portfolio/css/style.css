@@ -18,6 +18,14 @@ html {
   scroll-behavior: smooth;
 }
 
+#about,
+#projects,
+#services,
+#reviews,
+#contact {
+  scroll-margin-top: 88px;
+}
+
 body {
   margin: 0;
   font-family: "Tajawal", "Cairo", sans-serif;
