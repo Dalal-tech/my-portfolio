@@ -1,7 +1,7 @@
 # قوالب رسائل واتساب للتسويق
 
 رابط الصفحة:
-https://dalal-tech.github.io/my-portfolio/websites/dalal-portfolio/
+https://dalal-tech.github.io/my-portfolio/
 
 ---
 
@@ -13,7 +13,7 @@ https://dalal-tech.github.io/my-portfolio/websites/dalal-portfolio/
 مرّيت على مشروعكم الجميل، وحسّيت أن عندكم فرصة قوية لزيادة الطلبات عبر صفحة بسيطة ومرتبة تعرض المنيو والموقع ورابط التواصل مباشرة.
 
 هذا رابط نماذج أعمالي:
-https://dalal-tech.github.io/my-portfolio/websites/dalal-portfolio/
+https://dalal-tech.github.io/my-portfolio/
 
 إذا حابين، أرسل لكم تصور مجاني مبدئي مناسب لهوية الكوفي ☕
 
@@ -25,7 +25,7 @@ https://dalal-tech.github.io/my-portfolio/websites/dalal-portfolio/
 أنا جاهزة أرسل لكم تصور مجاني سريع لصفحة الكوفي + سعر واضح ومدة تنفيذ قصيرة.
 
 نماذج الأعمال:
-https://dalal-tech.github.io/my-portfolio/websites/dalal-portfolio/
+https://dalal-tech.github.io/my-portfolio/
 
 إذا مناسب، فقط اكتبوا: "ابدئي"
 
@@ -39,6 +39,6 @@ https://dalal-tech.github.io/my-portfolio/websites/dalal-portfolio/
 إذا حابين تطوير حضوركم الرقمي (صفحة تعريف + واتساب مباشر + عرض المنتجات بشكل أنيق)، يسعدني أخدمكم.
 
 الرابط:
-https://dalal-tech.github.io/my-portfolio/websites/dalal-portfolio/
+https://dalal-tech.github.io/my-portfolio/
 
 وبالتوفيق لكم دائمًا 🤍
